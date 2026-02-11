@@ -1,0 +1,24 @@
+{
+  "name": "mini-jira",
+  "version": "1.0.0",
+  "description": "A full stack app for tracking issues",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mini jira",
+    "full stack issue tracker"
+  ],
+  "author": "Bhushan Patil",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.0",
+    "nodemon": "^3.1.11"
+  }
+}
