@@ -17,7 +17,7 @@ const issueSchema = new Schema(
     status: {
       type: String,
       required: true,
-      enum: ['admin', 'user', 'guest']
+      enum: ['open', 'in-progress', 'done']
     },
     priority: {
       type: String,
