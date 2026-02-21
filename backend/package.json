@@ -1,5 +1,5 @@
 {
-  "name": "mini-jira",
+  "name": "mini-jira-backend",
   "version": "1.0.0",
   "description": "A full stack app for tracking issues",
   "main": "index.js",

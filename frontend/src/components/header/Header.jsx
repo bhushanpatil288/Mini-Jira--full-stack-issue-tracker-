@@ -1,0 +1,15 @@
+import SidebarMid from "./headerComponents/SidebarMid/SidebarMid"
+import SidebarTop from "./headerComponents/SidebarTop/SidebarTop"
+
+const Header = () => {
+  return (
+    <header className="px-2 py-2">
+      <div>
+        <SidebarTop />
+        <SidebarMid />
+      </div>
+    </header>
+  )
+}
+
+export default Header   

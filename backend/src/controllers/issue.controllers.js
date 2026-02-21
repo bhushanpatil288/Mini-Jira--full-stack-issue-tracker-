@@ -2,6 +2,14 @@ const issueModel = require("../models/issue.model");
 const { ApiError } = require("../utils/ApiError")
 const asyncHandler = require("../utils/asyncHandler");
 
+const getIssues = asyncHandler(async(req,res)=>{
+  const issues = await issueModel.find();
+  res.status(200).json({
+    status: 1,
+    data: issues
+  });
+})
+
 const insertIssue = asyncHandler(async(req, res)=>{
   const { title, description, status, priority, assignedTo } = req.body;
   if(!title|| !description || !status || !priority){
@@ -23,4 +31,4 @@ const insertIssue = asyncHandler(async(req, res)=>{
   });
 })
 
-module.exports = { insertIssue }
+module.exports = { getIssues, insertIssue }

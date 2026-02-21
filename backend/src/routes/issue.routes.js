@@ -1,9 +1,9 @@
 const express = require("express");
 
-const { insertIssue } = require("../controllers/issue.controllers.js");
+const { getIssues, insertIssue } = require("../controllers/issue.controllers.js");
 const router = express.Router();
 
-router.route("/add").post(insertIssue);
-
+router.route("/").get(getIssues);
+router.route("/").post(insertIssue);
 
 module.exports = router;
