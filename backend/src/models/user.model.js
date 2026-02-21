@@ -13,13 +13,7 @@ const userSchema = new Schema(
     role: {
       type: String,
       required: true
-    },
-    task:[ 
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Issue"
-      }
-    ]
+    }
   }, {timestamps: true}
 )
 

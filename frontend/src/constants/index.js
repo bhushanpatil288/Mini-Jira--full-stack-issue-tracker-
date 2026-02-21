@@ -1,5 +1,6 @@
-import { RiUserLine, RiTimeLine, RiApps2AddLine, RiGitbookLine, RiStarLine, RiPlanetLine, RiArrowRightSLine, RiAddLine, RiMoreLine  } from "@remixicon/react";
+import { RiUserLine, RiTimeLine, RiApps2AddLine, RiGitbookLine, RiStarLine, RiPlanetLine, RiArrowRightSLine, RiAddLine, RiMoreLine, RiGlobalLine, RiRemixRunLine, RiKanbanView2, RiCalendarLine, RiPagesLine, RiArchiveStackLine  } from "@remixicon/react";
 import jiraIcon from "/images/jira-safari-pintab-icon.svg";
+import natureIcon from "/images/10413.svg";
 
 const navList1 = [
   {
@@ -36,4 +37,29 @@ const navList1 = [
   }
 ]
 
-export { jiraIcon, navList1 };
+const navigationList = [
+  {
+    title: "Summary",
+    icon: RiGlobalLine
+  },{
+    title: "Backlog",
+    icon: RiRemixRunLine
+  },{
+    title: "Board",
+    icon: RiKanbanView2
+  },{
+    title: "Calender",
+    icon: RiCalendarLine
+  },{
+    title: "Timeline",
+    icon: RiGitbookLine
+  },{
+    title: "Pages",
+    icon: RiPagesLine
+  },{
+    title: "Forms",
+    icon: RiArchiveStackLine
+  }
+]
+
+export { jiraIcon, natureIcon ,navList1, navigationList };
