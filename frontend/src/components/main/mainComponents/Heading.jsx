@@ -18,7 +18,7 @@ const Heading = () => {
             <h1 className="font-bold text-xl">Your team</h1>
           </div>
           <div>
-            <ButtonB icon={RiGroupLine} />
+            <ButtonB icon={RiGroupLine} size={16} />
           </div>
           <div className="hover:bg-gray-200 p-1 rounded-lg cursor-pointer">
             <RiMoreLine size={20} />

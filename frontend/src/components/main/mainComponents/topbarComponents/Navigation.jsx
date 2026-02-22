@@ -4,8 +4,8 @@ import "./navigation.css"
 const Navigation = () => {
   const [selected, setSelected ] = useState("Backlog")
   return (
-    <div className="px-5 border-b border-gray-300 my-3">
-      <ul className="flex gap-3 flex-wrap">
+    <div className="px-5 border-b border-gray-300">
+      <ul className="flex gap-5 flex-wrap">
         {
           navigationList.map((item, i)=>{
             return (
