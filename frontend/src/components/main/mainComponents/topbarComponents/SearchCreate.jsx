@@ -1,7 +1,9 @@
 import { RiSearchLine } from "@remixicon/react"
-import Button from "../../../common/Button"
-
+import CreateModal from "./searchCreateComponents/CreateModal"
+ 
 const SearchCreate = () => {
+  
+
   return (
     <div className="w-full sm:w-6/12 xl:w-8/12">
       <div className="flex gap-3 item-center justify-start 2xl:justify-center 3xl:px-20">
@@ -10,10 +12,7 @@ const SearchCreate = () => {
           <div className="flex justify-center items-center"><RiSearchLine size={20} color="gray" /></div>
           <input type="text" placeholder="Search" className="w-full outline-none" />
         </div>
-        <div>
-          <Button text={"+ Create"} />
-        </div>
-        
+        <CreateModal />
       </div>
     </div>
   )
